@@ -1,0 +1,21 @@
+1) Configuracion del entorno
+    1.1) Instalacion del motor de base de datos (PostgreSQL) y la herramienta de administracion (pgAdmin)
+    1.2) Verificacion de la conexion al servidor
+    1.3) Creacion de la base de datos "penguin_challenge" (CREATE DATABASE)
+
+2) Modelado relacional (a partir del analisis de los CSV crudos)
+    2.1) Analisis del dominio: identificacion de entidades, campos y relaciones
+         a partir de los 7 CSV (customers, products, orders, order_items,
+         payments, order_status_history, order_audit)
+    2.2) Creacion de tablas de staging (landing zone, sin restricciones)
+    2.3) Carga masiva de datos (importacion via COPY / Import-Export)
+    2.4) Disenio del esquema final: tipos de datos, PRIMARY KEY, FOREIGN KEY,
+         restricciones NOT NULL, UNIQUE y CHECK, e indices
+
+3) Insercion y verificacion de integridad
+    3.1) Migracion de datos desde staging a las tablas finales (casteo de tipos)
+    3.2) Verificacion de conteo de filas por tabla
+    3.3) Validacion de integridad: pruebas de restricciones y deteccion de
+         inconsistencias
+
+         

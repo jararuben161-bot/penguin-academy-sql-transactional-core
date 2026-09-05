@@ -1,0 +1,19 @@
+1) Descarga desde postgresql.org/download/windows , se instala, 
+  y durante la instalacion se define una contrasenia para el 
+  usuario postgres (hay que recordarla). Junto con el motor 
+  se instala tambien pgAdmin, la herramienta visual para administrarlo.
+
+2) Confirmar que el servicio de Windows este activo: services.msc  
+   buscar postgresql-x64-18 
+   Estado debe decir "En ejecucion".
+
+3) Con pgAdmin: doble clic sobre el servidor  
+ ingresar la contrasenia definida en el paso 1.
+ (Tambien se puede hacer por terminal con "psql -U postgres -h localhost -p <puerto>".)
+
+4) crear base de datos
+  CREATE DATABASE penguin_challenge;
+
+5) unir a base de datos con los datos 
+   \c penguin_challenge
+
