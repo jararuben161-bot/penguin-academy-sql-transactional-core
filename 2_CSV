@@ -1,0 +1,13 @@
+1) Analisis del dominio: identificacion de entidades
+   A partir de los 7 CSV provistos (customers, products, orders, order_items,
+   payments, order_status_history, order_audit), se identificaron 7 entidades:
+   - customers: clientes de la tienda
+   - products: catalogo de productos
+   - orders: pedidos realizados por los clientes
+   - order_items: lineas de detalle de cada pedido (conecta orders con
+     products, con datos propios como cantidad y descuento)
+   - payments: pagos asociados a un pedido (un pedido puede tener varios
+     intentos de pago, por eso es una relacion 1 a muchos)
+   - order_status_history: historial de cambios de estado de cada pedido
+   - order_audit: registro de auditoria de cambios de campos especificos
+     de un pedido
